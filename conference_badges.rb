@@ -10,21 +10,18 @@ end
 
 def assign_rooms(array_of_names)
   array_of_room_assignments = []
-  array_of_room_assignments = array_of_names.each_with_index do |name, index|
-    array_of_room_assignments << "Hello, #{name}! You'll be assigned to room!"
+  array_of_names.each_with_index do |name, index|
+    array_of_room_assignments << "Hello, #{name}! You'll be assigned to room #{index + 1}!"
     array_of_room_assignments
   end
 end 
 
 
 def add_value_and_index(array)
-  new_array = []
-  new_array = array.each_with_index do |element, index|
-    p "#{element} is a position #{index}"
-  end
-  new_array
+  result = []
+  array.each_with_index { |value, index| result << value + index }
+  result
 end
-
 
 
 def printer
