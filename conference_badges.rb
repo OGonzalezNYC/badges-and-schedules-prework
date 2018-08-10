@@ -17,11 +17,7 @@ def assign_rooms(array_of_names)
 end 
 
 
-def add_value_and_index(array)
-  result = []
-  array.each_with_index { |value, index| result << value + index }
-  result
-end
+
 
 
 def printer
